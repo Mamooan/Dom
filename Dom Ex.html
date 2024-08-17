@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 30vh;
+            width: 50%;
+            border: 1px solid black;
+            font-size: 33px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>Hello World</div>
+    <div>Hello World</div>
+    <div>Hello World</div>
+    <div>Hello World</div> -->
+
+
+
+    <script>
+        // var te = document.getElementsByTagName("div")[2]
+        // te.style.backgroundColor = "red";
+        // te.style.color = "white"
+        // te.innerHTML="<span>viewer</span>"
+        // console.log(te); 
+
+        
+        // var x=document.getElementById('main')
+    // x.innerHTML='<div>It Tower</div>'
+    // console.log(x,"test");
+
+
+    // var z=document.querySelectorAll("div")[1]
+    // z.innerText="Ahmad"
+    // console.log(z)
+
+
+    // var z=document.querySelectorAll("div")[1]
+    // z.innerHTML="<h1>Ahmad</h1>"
+    // console.log(z)
+
+    
+    // var z=document.querySelectorAll("div")[1]
+    // z.innerHTML+="<h1>Ahmad</h1>"
+    // console.log(z)
+    
+    
+    </script>
+
+
+   <!-- 1) Practice to get the HTML Element and console them
+
+
+<h1>my name is usman</h1>
+     <span>it tower</span>
+     <h1>cricket is my passion</h1>
+
+
+     <script>
+        var x=document.querySelectorAll("h1,span,div")[0].style
+        x.color="red";
+        x.border='1px solid blue'
+        console.log(x);
+</script> -->
+
+
+
+<!-- 2) Take 2 , Button 1 the Button 2 
+on Each Button click change the img of the img Tag that is Already set the Image-->
+
+
+<img src="./Alexa1 (6).jpg" style="height: 50vh;width: 100%; border: 1px solid black;" class="main"></img>
+<button style="height: 7vh;width: 13%;" onclick="main1()">Button1</button>
+<button style="height: 7vh;width: 13%;" onclick="main2()">Button2</button>
+
+<!-- <img src="./Alexa1 (6).jpg" alt=""> -->
+
+ <script>
+    var x=document.getElementsByClassName("main");
+function main1() {
+    // var x=document.getElementsByClassName("main")
+    x[0].setAttribute('src',"./Alexa1 (9).jpg");
+    console.log(x);
+}
+function main2() {
+    // var x=document.getElementsByClassName("main")
+    x[0].setAttribute('src',"./Alexa1 (6).jpg");
+    console.log(x);
+}
+</script>
+
+
+
+
+<!-- <img src="" style="height: 100px;width: 100px;border: 1px solid black; " class="ma" alt="">
+<button onclick="ab()" style="height: 10vh;width: 15%;background-color: yellow;"></button>
+<button onclick="ab1()" style="height: 10vh;width: 15%;background-color: aqua;"></button>
+<button onclick="ab2()" style="height: 10vh;width: 15%;background-color: black;"></button>
+
+
+<script>
+    var a=document.getElementsByClassName("ma");
+    function ab() {
+        a[0].setAttribute('src',"./Alexa1 (6).jpg")
+        console.log(a)
+    }
+    function ab1() {
+        a[0].setAttribute('src',"./Alexa1 (9).jpg")
+        console.log(a)
+    }
+    function ab2() {
+        a[0].setAttribute('src',"")
+        console.log(a)
+    }
+</script> -->
+
+
+
+<!-- Create an HTML page with a <p> element containing some text.
+Use JavaScript to change the text of the <p> element to something
+else when a button is clicked. -->
+
+
+
+<!-- <p>Lorem, ipsum dolor.</p>
+<button onclick="text()">Change text</button>
+
+<script>
+  var x=document.querySelector("p");
+  function text() {
+    x.innerText="Hello World"
+    console.log(x);
+}
+</script> -->
+
+
+
+
+<!-- <p id="a" >usman is hero for Girl.</p>
+<button id="b"  style="height: 10vh;width: 15%;background-color: yellow;"></button>
+<button class="c"  style="height: 10vh;width: 15%;background-color: yellow;"></button>
+
+<script>
+    var ac=document.querySelector("#a");
+    var btn=document.querySelector("#b");
+    var bt1=document.querySelector(".c");
+    console.log(btn);
+
+    btn.addEventListener('click' , ()=>{
+    console.log('working');
+    ac.innerHTML+=" I am kadding"
+    })
+    bt1.addEventListener('click',()=>{
+        ac.innerText=""
+        console.log(ac)
+    }) 
+    
+</script> -->
+
+
+
+
+
+<!-- Create an HTML page with a button. Use JavaScript to change the background color
+of the page when the button is clicked -->
+
+
+<!-- 
+<button onclick="on()">Change background color</button>
+
+<script>
+    function on() {
+        document.body.style.backgroundColor="red"
+        // document.body.style.backgroundColor="black"
+    }
+</script> -->
+
+
+
+
+
+
+<!-- Create an HTML page with a list of items (e.g., a <ul> with multiple 
+<li> elements). Add a button that removes an item from the list when clicked. -->
+
+<!-- <button>Remove li</button>
+<ul>
+    <li class="ok">Home</li>
+    <li>Home</li>
+    <li>Home</li>
+    <li>Home</li>
+
+</ul>
+<script>
+    var x=document.getElementsByTagName("button")[0]
+      a=document.querySelector("ul")
+    x.addEventListener("click",()=>{
+        z=document.getElementsByTagName("li")
+        console.log(z.length);
+           a.removeChild(z[z.length-1])
+    })
+</script> -->
+
+<!-- .................................sir wala............................ -->
+
+<!-- <body>
+    <ul id="mainUl">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Services 1</li>
+
+    </ul>
+    <button onclick="handleDelete()">Remove li</button>
+    <script>
+        var x=document.getElementById('mainUl')
+        function handleDelete()
+        {
+            var list=document.getElementsByTagName('li')
+            console.log(list.length);
+            if(list.length>0)
+            {
+             x.removeChild(list[list.length-1])   
+            }
+        }
+    </script>
+</body> -->
+
+<!-- .................................end sir wala............................ -->
+
+<!-- ...........................sir wala....................................... -->
+
+
+<!-- <body>
+    <ul id="mainUl">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Services 1</li>
+
+    </ul>
+    <button onclick="handleDelete()">Remove li</button>
+    <script>
+        var x=document.getElementById('mainUl')
+        function handleDelete()
+        {
+            var list=document.getElementsByTagName('li')
+            console.log(list.length);
+            if(list.length>0)
+            {
+             x.removeChild(list[list.length-1])   
+            }
+        }
+    </script>
+</body> -->
+
+
+<!-- ...........................end sir wala....................................... -->
+
+<!-- 
+Create an HTML page with a button and a hidden <div>. When the button is
+clicked, use JavaScript to toggle the visibility of the <div. -->
+
+
+
+<!-- Create an HTML page with a box. Use JavaScript to change the box's color when the
+mouse hovers over it and revert it to its original color when the mouse leaves the box. -->
+
+
+<!-- <div class="btn"></div>
+
+<script>
+    var x=document.querySelector("div")
+    x.addEventListener('mouseleave',()=>{
+        x.style.backgroundColor="black"
+        console.log(x);
+    }) 
+</script> -->
+
+
+
+
+<!-- ........................ Next day programs......................... -->
+
+
+<!-- You have an HTML element with the id "myButton." You want to change
+ the background color of a <div> with the id "myDiv" when the "myButton" is 
+    clicked using  event listener for the mouse click event. -->
+
+
+    <!-- <div id="myDiv"></div>
+    <button id="myButton">Change color</button>
+
+    <script>
+        var x=document.querySelector("#myButton")
+        x.addEventListener("click",my)
+        function my() {
+            z=document.querySelector("#myDiv").style
+            z.backgroundColor="black"
+            console.log(z);
+        }
+    </script> -->
+
+
+
+
+
+    <!-- Create a list of items (e.g., <li> elements). When the mouse
+    hovers over an item, change its background color, and when the 
+    mouse moves away, revert it to the original color. -->
+
+<!-- .........................Correct.............................. -->
+
+<!-- <ul onmouseleave="">
+    <li>Home</li>
+    <li>Home</li>
+    <li>Home</li>
+
+</ul>
+<script>
+    z=document.querySelectorAll('li')
+    z.forEach(ele => {
+         console.log(ele);
+         ele.addEventListener("mouseenter",()=>{
+            ele.style.backgroundColor="red"
+            ele.style.color="white"
+            ele.style.cursor="pointer"
+         })
+         ele.addEventListener("mouseleave",()=>{
+            ele.style.backgroundColor="white"
+            ele.style.color="black"
+            ele.style.cursor="pointer"
+         })
+    });
+</script> -->
+
+
+<!-- ...............................Sir wala................................ -->
+
+<!-- <body>
+    Create a list of items (e.g., <li> elements). When the mouse hovers over an item, change its background color, and when the mouse moves away, revert it to the original color
+
+<ol>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Work</li>
+</ol>
+<script>
+    var li=document.querySelectorAll('li')
+    console.log(li);
+    li.forEach((ele)=>{
+        console.log(ele,"test");
+        ele.addEventListener('mouseenter',()=>{
+           ele.style.color="white" 
+           ele.style.backgroundColor="blue" 
+
+           ele.style.cursor="pointer" 
+
+        })
+        ele.addEventListener('mouseleave',()=>{
+           ele.style.color="black" 
+           ele.style.backgroundColor="pink" 
+           ele.style.cursor="pointer" 
+
+        })
+    })
+</script>
+
+</body> -->
+
+
+<!-- .................................end sir wala................................. -->
+
+
+<!-- <ul style="background-color: aqua;width: 10%;">
+    <li>Home</li>
+    <li>Home</li>
+    <li>Home</li>
+</ul>
+<script>
+    var x=document.querySelector("ul")
+    x.addEventListener("mouseenter",()=>{
+        x.style.backgroundColor="red"
+        x.style.transitionDuration="1s"
+    })
+    x.addEventListener("mouseleave",()=>{
+        x.style.backgroundColor="aqua"
+        x.style.transitionDuration="1s"
+    })
+</script> -->
+
+
+
+
+<!-- <div onmouseenter="mousehovar1(this)"
+        onmouseleave="mousehovar2(this)">
+
+       <ul>
+        <li>usman</li>
+        <li>malik</li>
+        <li>cricket</li>
+
+
+       </ul>
+    </div>
+    <script>
+        function mousehovar1(ele)
+        {
+            ele.style.color="red";
+        }
+        function mousehovar2(ele)
+        {
+            ele.style.color="black";
+
+        }
+    </script>  -->
+
+
+<!-- Create a button and a <div> element. Implement a click counter that increases the
+count every time the button is clicked, and display the count in the <div></div> -->
+
+
+<!-- ...........................correct........................... -->
+<!-- <body>
+<button>Add 1 number</button>
+<button class="less">Less 1 number</button>
+<button id="re">Reset</button>
+<div>0</div>
+<script>
+ var x=document.querySelector('button')
+ var z=0
+ var q=document.querySelector(".less")
+ var w=document.querySelector("#re")
+ var a=document.querySelector("div")
+ x.addEventListener("click",on)
+ function on() {
+    if (z<10) {
+         z++
+     a.innerText=z
+     console.log(z)
+    }
+    else{
+        z==10
+        a.innerText=z
+        console.log(z);
+    }
+    
+ }
+ q.addEventListener("click",()=>{
+    if (z>0 && z<=10) {
+           z--
+    a.innerText=z
+    console.log(z);
+    }
+    else{
+        z==0
+        a.innerText=z
+        console.log(z);
+    }
+ 
+ })
+ w.addEventListener("click",()=>{
+    z*=0
+    a.innerText=z
+    console.log(z);
+ })
+</script>
+</body> -->
+<!-- ...................................sir wala///////////////////// -->
+
+<!-- <body>
+    Create a button and a <div> element. Implement a click counter that increases the count every time the button is clicked, and display the count in the <div>
+
+    
+        <button onclick="handleInc()">Increment</button>
+        <div>0</div>
+
+<script>
+var count=0;
+var div=document.querySelector('div')
+    function handleInc()
+    {
+        count++;
+        div.innerText=count
+console.log(count,'working');
+    }
+</script>
+</body> -->
+
+
+
+<!-- .........................................end sir wala............................... -->
+<!-- <div></div>
+<button>Add div</button>
+
+<script>
+    var x=document.querySelector("button")
+    x.addEventListener("click",()=>{
+        z=document.querySelector("div")
+        z.innerHTML+="<div></div>"
+        console.log();
+       
+        // console.log(z);
+    })
+    // x.removeChild(list[list.length-1]) 
+</script> -->
+
+
+
+<!-- 
+<button>Add div</button>
+
+<script>
+    var x=document.querySelector("button")
+    x.addEventListener("click",()=>{
+        x.innerHTML+="<div></div>"
+        console.log(x);
+       
+    })
+</script> -->
+
+
+
+
+<!-- When the user hovers over an image, use mouse events to zoom in on the image.
+ Revert it to the original size when the mouse moves away. -->
+
+<!-- ............................correct............................... -->
+<!-- <img src="./Alexa1 (6).jpg" style="height: 30vh;width: 30vh;">
+<script>
+    var x=document.getElementsByTagName("img")[0];
+    x.addEventListener('mouseenter',ele)
+    function ele() {
+        x.style.transform='scale(1.3)'
+        x.style.transitionDuration="1s"
+    }
+    x.addEventListener('mouseleave',a)
+    function a() {
+        x.style.transform='scale(1)'
+        x.style.transitionDuration="1s"
+    }
+</script> -->
+
+
+<!-- ............................sir wala....................................... -->
+
+<!-- <body>
+    When the user hovers over an image, use mouse events to zoom in on the image. Revert it to the original size when the mouse moves away.
+    <div></div>
+    <script>
+        var div=document.querySelector('div')
+        div.addEventListener('mouseenter',()=>{
+            div.style.transitionDuration="1.5s"
+            div.style.transform='scale(1.15)'
+        })
+        div.addEventListener('mouseleave',()=>{
+            div.style.transitionDuration="1.5s"
+            div.style.transform='scale(1)'
+        })
+    </script>
+
+</body> -->
+
+
+
+<!-- ............................end sir wala....................................... -->
+
+
+
+
+
+<!-- Write JavaScript code that, when the "Add List Item" button is clicked, 
+creates a new <li> element and appends it to the <ul>. 
+    The <li> should contain the text "New List Item." -->
+
+
+        
+<!-- <ul>
+    <li>Home</li>
+</ul>
+<button onclick="ha()">Add li</button>
+
+<script>
+    var btn=document.querySelector("button")
+   
+    function ha() {
+    var x=document.querySelector("ul")
+    var z=document.createElement("li");
+        z.innerText="Home"
+   console.log(z);
+    x.appendChild(z)
+
+        
+    } -->
+</script>
+
+
+
+<!-- ...............................Sir wala................................... -->
+
+<!-- <body>
+    Write JavaScript code that, when the "Add List Item" button is clicked, creates a new <li> element and appends it to the <ul>. The <li> should contain the text "New List Item."
+    <button>Add new Li</button>
+    <ul>
+        <li>Home</li>
+    </ul>
+    <script>
+        var btn=document.querySelector('button')
+        var ul=document.querySelector('ul')
+        btn.addEventListener('click',()=>{
+            var li=document.createElement('li')
+            li.innerText="New List Item"
+            console.log(li,"test");
+            ul.appendChild(li)
+        })
+    </script>
+body -->
+
+
+
+
+<!-- ................Sir Wala......................... -->
+
+<!-- <h1 class="main" id="ma123">VVork CLoud Technologies
+    <span>Its Span Text Here</span>
+</h1>
+<h1 id="main">VVork CLoud Technologies</h1> -->
+<!-- <h3 id="main">VVork CLoud</h3> -->
+<!-- <p id="main">Lorem, ipsum dolor.</p> -->
+
+<script>
+    //  var x=document.getElementsByTagName('h1')
+    // var x=document.getElementsByClassName('main')
+    // var x=document.getElementById('main')
+    // var x=document.querySelector('#main')
+    // var x=document.querySelectorAll('#main')
+    // console.log(x[1],"test");
+
+    // var x = document.querySelector('.main')
+    // console.log(x.getAttributeNode('id'),"test");
+    // x.innerHTML+=<button>Click me</button><p>innerHTML</p>
+    // x.setAttribute('style','border:2px solid red')
+    // console.log(x.classList.add('main'));
+    // console.log(x.classList.remove('.main'));
+    // console.log(x.classList.toggle('main'), "test");
+    // x.style.border="2px solid red"
+    // x.style.color="blue"
+    // x.style.marginLeft="200px"
+</script>
+
+
+
+
+
+
+
+
+<!-- 1) Practice to get the HTML Element and console them -->
+
+<!-- <body>
+    <div>
+        <span>Vvork</span>
+    </div>
+
+    <script>
+var div=document.querySelector('div span')
+console.log(div ,"test");
+    </script>
+</body> -->
+
+
+
+<!-- 
+2) Take 2 , Button 1 the Button 2 
+on Each Button click change the img of the img Tag that is Already set the Image -->
+
+<!-- <body>
+    
+    <img src="./Alexa1 (6).jpg" alt="">
+<button onclick="handleImg1()">img1</button>
+<button onclick="handleImg2()">img2</button>
+
+<script>
+    var img=document.getElementsByTagName('img')
+    function handleImg1()
+    {
+      console.log('button 1 ok');  
+      img[0].setAttribute('src',"./Alexa1 (9).jpg")
+    }
+
+    function handleImg2()
+    {
+        img[0].setAttribute('src',"./Alexa1 (6).jpg")
+      console.log('button 2 ok');  
+    }
+</script>
+</body> -->
+
+
+
+<!-- Create an HTML page with a <p> element containing some text.
+Use JavaScript to change the text of the <p> element to something
+else when a button is clicked. -->
+
+
+
+
+
+<!-- <body>
+    <p>Lorem, ipsum dolor.</p>
+    <button onclick="myfn()">Click me</button>
+<script>
+    function myfn()
+    {
+        var para=document.querySelector('p')
+        para.innerText="Vvork task 3"
+    }
+</script>
+</body> -->
+
+
+<!-- 
+Create an HTML page with a button. Use JavaScript to change 
+the background color of the page when the button is clicked. -->
+
+<!-- <body>
+    <button onclick="handleClick()">Click</button>
+    <script>
+function handleClick()
+{
+  document.body.style.backgroundColor="red"  
+}
+    </script>
+
+</body> -->
+
+
+
+
+<!-- Create an HTML page with a list of items (e.g., a <ul> with multiple 
+<li> elements). Add a button that removes an item from the list when clicked. -->
+
+
+<!-- 
+Create an HTML page with a button and a hidden <div>. When the button is
+clicked, use JavaScript to toggle the visibility of the <div. -->
+
+
+
+<!-- Create an HTML page with a box. Use JavaScript to change the box's color when the
+mouse hovers over it and revert it to its original color when the mouse leaves the box. -->
+
+
+<!-- <div class="btn"></div>
+
+<script>
+    var x=document.querySelector("div")
+    x.addEventListener('mouseleave',()=>{
+        x.style.backgroundColor="black"
+        console.log(x);
+    }) 
+</script> -->
+
+
+
+
+<!-- <body>
+    <div onmouseenter="handleClick()" onmouseleave="handleClick1()"></div>
+    <button >On Mouse</button>
+    <script>
+var div=document.querySelector('div')
+function handleClick()
+{
+div.style.backgroundColor="red"
+}
+function handleClick1()
+{
+div.style.backgroundColor="aquamarine"
+}
+    </script>
+</body> -->
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+<!-- ...................sir wala.............................. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+            background-color: aquamarine;
+        } */
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<!-- <button>Click me</button> -->
+<!-- <script>
+    // var btn = document.querySelector('button')
+    //   btn.addEventListener('dblclick',()=>{
+    //     console.log('function is Working');
+    //   }) 
+    // btn.addEventListener('click', handleData)
+    // function handleData()
+    // {
+    //     console.log('working');
+    // } 
+</script> -->
+<!-- <body>
+    <div class="hidden"></div>
+<button onclick="handleHidden()">click</button>
+<script>
+    function handleHidden()
+    {
+        var div=document.querySelector('div')
+        div.classList.toggle('hidden')
+    }
+</script>
+</body> -->
+<!-- <body>
+    <div onmouseenter="handleClick()" onmouseleave="handleClick1()"></div>
+    <button >On Mouse</button>
+    <script>
+var div=document.querySelector('div')
+function handleClick()
+{
+div.style.backgroundColor="red"
+}
+function handleClick1()
+{
+div.style.backgroundColor="aquamarine"
+}
+    </script>
+</body> -->
+
+
+
+<!-- <body>
+    <ul id="mainUl">
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Services 1</li>
+
+    </ul>
+    <button onclick="handleDelete()">Remove li</button>
+    <script>
+        var x=document.getElementById('mainUl')
+        function handleDelete()
+        {
+            var list=document.getElementsByTagName('li')
+            console.log(list.length);
+            if(list.length>0)
+            {
+             x.removeChild(list[list.length-1])   
+            }
+        }
+    </script>
+</body> -->
+
+
+
+<!-- <body>
+    <button onclick="handleClick()">Click</button>
+    <script>
+function handleClick()
+{
+  document.body.style.backgroundColor="red"  
+}
+    </script>
+
+</body> -->
+
+<!-- <body>
+    <p>Lorem, ipsum dolor.</p>
+    <button onclick="myfn()">Click me</button>
+<script>
+    function myfn()
+    {
+        var para=document.querySelector('p')
+        para.innerText="Vvork task 3"
+    }
+</script>
+</body> -->
+
+
+
+
+<!-- <body>
+    
+    <img src="" alt="">
+<button onclick="handleImg1()">img1</button>
+<button onclick="handleImg2()">img2</button>
+
+<script>
+    var img=document.getElementsByTagName('img')
+    function handleImg1()
+    {
+      console.log('button 1 ok');  
+      img[0].setAttribute('src',"./goku_blue.jpg")
+    }
+
+    function handleImg2()
+    {
+        img[0].setAttribute('src',"./img1.jpg")
+      console.log('button 2 ok');  
+    }
+</script>
+</body> -->
+
+
+<!-- <body>
+    <div>
+        <span>Vvork</span>
+    </div>
+
+    <script>
+var div=document.querySelector('div span')
+console.log(div ,"test");
+    </script>
+</body> -->
+
+
+
+<!-- .........................................Next day program................................. -->
+
+<!-- <body>
+    <nav>
+        <h2>Logo</h2>
+        <button id="myButton"><i style="font-size: 50px;" class="fa-solid fa-bars"></i></button></i>
+        <ul class="hidden">
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+            <li>Home</li>
+           
+    
+        </ul>
+        
+    </nav>
+    <script>
+        var hamburger= document.querySelector('#myButton')
+        hamburger.addEventListener('click',()=>{
+            var ul=document.querySelector('ul')
+            ul.classList.toggle('hidden')
+        })
+     </script>
+</body> -->
+
+<!-- <body>
+    You have a webpage with a form that has multiple input fields. Implement JavaScript code that clears the input fields when a "Clear" button is clicked, providing a clean slate for the user to enter new data.
+
+    <form action="">
+        <input type="text" placeholder="enter name">
+        <input type="password" placeholder="enter password">
+        <input type="email" placeholder="enter email">
+        <input type="number" placeholder="enter numbre">
+
+    </form>
+    <button>Clear Input</button>
+    <script>
+        var btn=document.querySelector('button')
+        var inp=document.querySelectorAll('input')
+        btn.addEventListener('click',()=>{
+            inp.forEach((ele)=>{
+            ele.value=""
+        })
+        })
+      
+    </script>
+</body> -->
+
+
+<!-- <body>
+    Write JavaScript code that, when the "Add List Item" button is clicked, creates a new <li> element and appends it to the <ul>. The <li> should contain the text "New List Item."
+    <button>Add new Li</button>
+    <ul>
+        <li>Home</li>
+    </ul>
+    <script>
+        var btn=document.querySelector('button')
+        var ul=document.querySelector('ul')
+        btn.addEventListener('click',()=>{
+            var li=document.createElement('li')
+            li.innerText="New List Item"
+            console.log(li,"test");
+            ul.appendChild(li)
+        })
+    </script>
+body -->
+
+
+<!-- <body>
+    When the user hovers over an image, use mouse events to zoom in on the image. Revert it to the original size when the mouse moves away.
+    <div></div>
+    <script>
+        var div=document.querySelector('div')
+        div.addEventListener('mouseenter',()=>{
+            div.style.transitionDuration="1.5s"
+            div.style.transform='scale(1.15)'
+        })
+        div.addEventListener('mouseleave',()=>{
+            div.style.transitionDuration="1.5s"
+            div.style.transform='scale(1)'
+        })
+    </script>
+
+</body> -->
+
+
+
+<!-- <body>
+    Create a button and a <div> element. Implement a click counter that increases the count every time the button is clicked, and display the count in the <div>
+
+    
+        <button onclick="handleInc()">Increment</button>
+        <div>0</div>
+
+<script>
+var count=0;
+var div=document.querySelector('div')
+    function handleInc()
+    {
+        count++;
+        div.innerText=count
+console.log(count,'working');
+    }
+</script>
+</body> -->
+
+
+
+<!-- <body>
+    Create a list of items (e.g., <li> elements). When the mouse hovers over an item, change its background color, and when the mouse moves away, revert it to the original color
+
+<ol>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+    <li>Work</li>
+</ol>
+<script>
+    var li=document.querySelectorAll('li')
+    console.log(li);
+    li.forEach((ele)=>{
+        console.log(ele,"test");
+        ele.addEventListener('mouseenter',()=>{
+           ele.style.color="white" 
+           ele.style.backgroundColor="blue" 
+
+           ele.style.cursor="pointer" 
+
+        })
+        ele.addEventListener('mouseleave',()=>{
+           ele.style.color="black" 
+           ele.style.backgroundColor="pink" 
+           ele.style.cursor="pointer" 
+
+        })
+    })
+</script>
+
+</body> -->
+
+
+
+
+
+<!-- <body>
+    You have an HTML element with the id "myButton." You want to change the background color of a <div> with the id "myDiv" when the "myButton" is clicked using  event listener for the mouse click event.
+        <button id="myButton">click me for color Change</button>
+        <div id="myDiv"></div>
+
+        <script>
+            var btn=document.querySelector('#myButton')
+            var myDiv=document.querySelector('#myDiv')
+
+            console.log(btn ,"test");
+            btn.addEventListener('click',()=>{
+                myDiv.style.backgroundColor="red"
+            })
+
+        </script>
+    
+
+</body> -->
+
+</html>
